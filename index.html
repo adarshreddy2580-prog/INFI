@@ -21,6 +21,56 @@
 
 		/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 	</style>
+	<style>
+		/* Responsive fixes for hero/layout to avoid overlapping and narrow column */
+		.elementor-element-aaa35d0 {
+			display: flex !important;
+			flex-wrap: wrap !important;
+			align-items: center !important;
+			gap: 1rem !important;
+		}
+
+		.elementor-element-cede78e {
+			flex: 1 1 50% !important;
+			max-width: 50% !important;
+		}
+
+		.elementor-element-cede78e img,
+		.elementor-element-687b5a7 img,
+		.elementor-element-72c113c img,
+		.elementor-element-ea6fc6e img,
+		.elementor-element-1de5472 img {
+			max-width: 100% !important;
+			height: auto !important;
+			display: block !important;
+		}
+
+		/* Avoid absolute positioned decorative images overlapping content on narrower screens */
+		.elementor-element-687b5a7,
+		.elementor-element-72c113c,
+		.elementor-element-ea6fc6e,
+		.elementor-element-1de5472 {
+			position: static !important;
+			transform: none !important;
+			width: auto !important;
+			max-width: 40% !important;
+		}
+
+		@media (max-width: 900px) {
+			.elementor-element-cede78e,
+			.elementor-element-687b5a7,
+			.elementor-element-72c113c,
+			.elementor-element-ea6fc6e,
+			.elementor-element-1de5472 {
+				flex-basis: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.elementor-element-aaa35d0 {
+				flex-direction: column !important;
+			}
+		}
+	</style>
 	<style id='wp-emoji-styles-inline-css'>
 		img.wp-smiley,
 		img.emoji {
@@ -837,10 +887,7 @@
 						data-id="5510832" data-element_type="widget" data-e-type="widget"
 						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}"
 						data-widget_type="heading.default">
-						<div class="elementor-heading-title elementor-size-default">Ligula hendrerit himenaeos maximus
-							amet nulla a nibh integer. Fusce commodo aliquam cubilia eleifend in primis dictumst augue
-							porta. Parturient aenean facilisi letius natoque dapibus metus feugiat ullamcorper fusce
-							consectetuer augue.
+						<div class="elementor-heading-title elementor-size-default">Our team builds AI-enabled systems, immersive analytics, and cloud-native applications that turn complex business challenges into competitive advantage.
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-00a2d0f e-con-full e-grid e-con e-child"
@@ -1010,7 +1057,7 @@
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Feugiat ultricies cubilia metus posuere nam enim tortor </p>
+									Delivering exceptional value to enterprises globally and ensuring satisfaction. </p>
 
 							</div>
 
@@ -1046,11 +1093,11 @@
 
 								<div class="elementor-icon-box-title">
 									<span>
-										Project Done </span>
+										Projects Delivered </span>
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Feugiat ultricies cubilia metus posuere nam enim tortor </p>
+									Delivering exceptional value to enterprises globally and ensuring satisfaction. </p>
 
 							</div>
 
@@ -1086,11 +1133,11 @@
 
 								<div class="elementor-icon-box-title">
 									<span>
-										Global Regions </span>
+										Global Reach </span>
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Feugiat ultricies cubilia metus posuere nam enim tortor </p>
+									Delivering exceptional value to enterprises globally and ensuring satisfaction. </p>
 
 							</div>
 
@@ -1126,11 +1173,11 @@
 
 								<div class="elementor-icon-box-title">
 									<span>
-										Top-Rated Expert </span>
+										Expert Professionals </span>
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Feugiat ultricies cubilia metus posuere nam enim tortor </p>
+									Delivering exceptional value to enterprises globally and ensuring satisfaction. </p>
 
 							</div>
 
@@ -1173,10 +1220,7 @@
 					<div class="elementor-element elementor-element-1d0e05c elementor-widget elementor-widget-heading"
 						data-id="1d0e05c" data-element_type="widget" data-e-type="widget"
 						data-widget_type="heading.default">
-						<p class="elementor-heading-title elementor-size-default">Magnis litora aptent quisque
-							consectetuer mollis imperdiet iaculis convallis. Sem aenean mollis aliquet class litora
-							vivamus luctus faucibus suscipit cras laoreet. Quis mi ad eleifend ante risus viverra primis
-							class ultricies consequat.</p>
+						<p class="elementor-heading-title elementor-size-default">Our experts collaborate with you to deliver scalable, efficient systems that drive confident decision-making.</p>
 					</div>
 					<div class="elementor-element elementor-element-4f12bdf elementor-widget elementor-widget-button"
 						data-id="4f12bdf" data-element_type="widget" data-e-type="widget"
@@ -1255,7 +1299,7 @@
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Amet convallis netus dis vitae mus gravida suscipit </p>
+									Leverage powerful technologies to streamline your workflows and increase overall operational efficiency. </p>
 
 							</div>
 
@@ -1292,7 +1336,7 @@
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Amet convallis netus dis vitae mus gravida suscipit </p>
+									Leverage powerful technologies to streamline your workflows and increase overall operational efficiency. </p>
 
 							</div>
 
@@ -1329,7 +1373,7 @@
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Amet convallis netus dis vitae mus gravida suscipit </p>
+									Leverage powerful technologies to streamline your workflows and increase overall operational efficiency. </p>
 
 							</div>
 
@@ -1366,7 +1410,7 @@
 								</div>
 
 								<p class="elementor-icon-box-description">
-									Amet convallis netus dis vitae mus gravida suscipit </p>
+									Leverage powerful technologies to streamline your workflows and increase overall operational efficiency. </p>
 
 							</div>
 
@@ -1751,8 +1795,7 @@
 						data-id="eafef4e" data-element_type="widget" data-e-type="widget"
 						data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}"
 						data-widget_type="heading.default">
-						<p class="elementor-heading-title elementor-size-default">Laoreet consectetuer sapien finibus
-							libero habitant. Volutpat phasellus bibendum molestie habitasse quis lacus.</p>
+						<p class="elementor-heading-title elementor-size-default">Discover how our AI, data, and integration services power smarter operations and faster growth.</p>
 					</div>
 					<div class="elementor-element elementor-element-09a5b71 elementor-invisible elementor-widget elementor-widget-button"
 						data-id="09a5b71" data-element_type="widget" data-e-type="widget"
@@ -1884,12 +1927,10 @@
 										</div>
 
 										<p class="elementor-icon-box-description">
-											Sagittis nullam tincidunt lobortis morbi facilisi dapibus </p>
-
-									</div>
-
-								</div>
-							</div>
+							Build smarter products with custom AI models and automated workflows.</p>
+												</div>
+											</div>
+										</div>
 						</div>
 						<div class="elementor-element elementor-element-cd1ec35 e-con-full e-flex elementor-invisible e-con e-child"
 							data-id="cd1ec35" data-element_type="container" data-e-type="container"
@@ -1912,12 +1953,10 @@
 										</div>
 
 										<p class="elementor-icon-box-description">
-											Sagittis nullam tincidunt lobortis morbi facilisi dapibus </p>
-
-									</div>
-
-								</div>
-							</div>
+							Create flexible solutions designed for your business needs.</p>
+												</div>
+											</div>
+										</div>
 						</div>
 						<div class="elementor-element elementor-element-e9ea2d7 e-con-full e-flex elementor-invisible e-con e-child"
 							data-id="e9ea2d7" data-element_type="container" data-e-type="container"
@@ -1940,12 +1979,10 @@
 										</div>
 
 										<p class="elementor-icon-box-description">
-											Sagittis nullam tincidunt lobortis morbi facilisi dapibus </p>
-
-									</div>
-
-								</div>
-							</div>
+							Link systems and data sources for seamless enterprise performance.</p>
+												</div>
+											</div>
+										</div>
 						</div>
 						<div class="elementor-element elementor-element-6285702 e-con-full e-flex elementor-invisible e-con e-child"
 							data-id="6285702" data-element_type="container" data-e-type="container"
@@ -1968,12 +2005,10 @@
 										</div>
 
 										<p class="elementor-icon-box-description">
-											Sagittis nullam tincidunt lobortis morbi facilisi dapibus </p>
-
-									</div>
-
-								</div>
-							</div>
+							Deliver immediate analytics that support faster decisions.</p>
+												</div>
+											</div>
+										</div>
 						</div>
 					</div>
 				</div>
@@ -1999,9 +2034,7 @@
 					<div class="elementor-element elementor-element-53d58d7 elementor-widget elementor-widget-heading"
 						data-id="53d58d7" data-element_type="widget" data-e-type="widget"
 						data-widget_type="heading.default">
-						<p class="elementor-heading-title elementor-size-default">Elit nullam rutrum euismod blandit
-							quisque nibh penatibus nostra. Vestibulum ultricies sapien facilisi pede id pellentesque.
-							Turpis dolor magna dictumst congue litora parturient si erat aptent.</p>
+						<p class="elementor-heading-title elementor-size-default">We deliver tailored AI and automation services powered by deep learning, cloud platforms, and data engineering.</p>
 					</div>
 					<div class="elementor-element elementor-element-36325c2 e-con-full e-flex e-con e-child"
 						data-id="36325c2" data-element_type="container" data-e-type="container">
