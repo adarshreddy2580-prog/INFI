@@ -7,7 +7,7 @@ with open('index.html', 'r', encoding='utf-8') as f:
 logo_target = """						<a href="./" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
 							<img src="./wp-content/uploads/sites/15/elementor/thumbs/AI-BOT-Assisten-rkr4rs1arkx40bliilvqpcqkq44yo2baa5yhqkcxds.png" alt="Infibytes Systems Logo" style="height: 48px; width: auto; object-fit: contain;">
 							<div style="display: flex; flex-direction: column; justify-content: center; text-transform: uppercase;">
-								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: #1a1a1a; letter-spacing: 2px; line-height: 1;">INFIBYTE</span>
+								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: #1a1a1a; letter-spacing: 2px; line-height: 1;">INFIBYTES</span>
 								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 600; font-size: 10px; color: #666666; letter-spacing: 3px; line-height: 1.2;">SYSTEMS</span>
 							</div>
 						</a>"""
