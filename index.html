@@ -22,17 +22,46 @@
 		/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 	</style>
 	<style>
-		/* Responsive fixes for hero/layout to avoid overlapping and narrow column */
+		/* Responsive hero layout and dark design fixes for the front page */
+		.elementor-element-978b45d,
+		.elementor-element-aaa35d0 {
+			background: #030510 !important;
+		}
+
 		.elementor-element-aaa35d0 {
 			display: flex !important;
+			justify-content: center !important;
 			flex-wrap: wrap !important;
 			align-items: center !important;
 			gap: 1rem !important;
+			position: relative !important;
+			padding: 4rem 2rem 3rem !important;
+			min-height: 760px !important;
+			overflow: hidden !important;
+			background: radial-gradient(circle at top left, rgba(111, 67, 255, 0.18), transparent 28%),
+					radial-gradient(circle at top right, rgba(0, 210, 255, 0.16), transparent 24%),
+					#030510 !important;
+		}
+
+		.elementor-element-aaa35d0::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+			background-image:
+				linear-gradient(180deg, rgba(139, 92, 255, 0.12) 0%, rgba(139, 92, 255, 0.04) 24%, transparent 45%),
+				linear-gradient(180deg, rgba(0, 198, 255, 0.12) 0%, rgba(0, 198, 255, 0.04) 18%, transparent 45%),
+				linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+			background-repeat: no-repeat, no-repeat, repeat;
+			background-position: 10% 0, 86% 0, 0 0;
+			background-size: 2px 100%, 2px 100%, 100% 100%;
 		}
 
 		.elementor-element-cede78e {
-			flex: 1 1 50% !important;
-			max-width: 50% !important;
+			flex: 1 1 680px !important;
+			max-width: 760px !important;
+			z-index: 2 !important;
+			min-width: 0 !important;
 		}
 
 		.elementor-element-cede78e img,
@@ -40,34 +69,86 @@
 		.elementor-element-72c113c img,
 		.elementor-element-ea6fc6e img,
 		.elementor-element-1de5472 img {
-			max-width: 100% !important;
+			width: 100% !important;
 			height: auto !important;
 			display: block !important;
 		}
 
-		/* Avoid absolute positioned decorative images overlapping content on narrower screens */
 		.elementor-element-687b5a7,
 		.elementor-element-72c113c,
 		.elementor-element-ea6fc6e,
 		.elementor-element-1de5472 {
-			position: static !important;
-			transform: none !important;
-			width: auto !important;
-			max-width: 40% !important;
+			position: absolute !important;
+			width: 180px !important;
+			max-width: 180px !important;
+			z-index: 3 !important;
+			opacity: 0.98 !important;
 		}
 
-		@media (max-width: 900px) {
-			.elementor-element-cede78e,
+		.elementor-element-687b5a7 {
+			top: 8% !important;
+			left: 5% !important;
+			transform: none !important;
+		}
+
+		.elementor-element-72c113c {
+			top: 7% !important;
+			right: 6% !important;
+			transform: none !important;
+		}
+
+		.elementor-element-ea6fc6e {
+			bottom: 12% !important;
+			left: 8% !important;
+			transform: none !important;
+		}
+
+		.elementor-element-1de5472 {
+			bottom: 10% !important;
+			right: 8% !important;
+			transform: none !important;
+		}
+
+		.elementor-element-7d7c9ae {
+			z-index: 4 !important;
+		}
+
+		.elementor-element-7d7c9ae .ekit_icon_button {
+			position: relative !important;
+			z-index: 5 !important;
+		}
+
+		@media (max-width: 1200px) {
 			.elementor-element-687b5a7,
 			.elementor-element-72c113c,
 			.elementor-element-ea6fc6e,
 			.elementor-element-1de5472 {
-				flex-basis: 100% !important;
+				width: 140px !important;
+				max-width: 140px !important;
+			}
+		}
+
+		@media (max-width: 900px) {
+			.elementor-element-aaa35d0 {
+				flex-direction: column !important;
+				min-height: auto !important;
+				padding: 2rem 1rem 2rem !important;
+			}
+
+			.elementor-element-cede78e {
+				flex: 1 1 100% !important;
 				max-width: 100% !important;
 			}
 
-			.elementor-element-aaa35d0 {
-				flex-direction: column !important;
+			.elementor-element-687b5a7,
+			.elementor-element-72c113c,
+			.elementor-element-ea6fc6e,
+			.elementor-element-1de5472 {
+				position: static !important;
+				width: auto !important;
+				max-width: 180px !important;
+				transform: none !important;
+				margin: 1rem auto 0 !important;
 			}
 		}
 	</style>
@@ -2119,7 +2200,7 @@
 											</div>
 
 											<p class="elementor-icon-box-description">
-												Analyze data to uncover actionable insights and optimize performance. </p>
+												Nam tristique lobortis nibh leo lacus diam lectus gravida purus </p>
 
 										</div>
 
@@ -2156,7 +2237,7 @@
 											</div>
 
 											<p class="elementor-icon-box-description">
-												Analyze data to uncover actionable insights and optimize performance. </p>
+												Nam tristique lobortis nibh leo lacus diam lectus gravida purus </p>
 
 										</div>
 
@@ -2193,7 +2274,7 @@
 											</div>
 
 											<p class="elementor-icon-box-description">
-												Analyze data to uncover actionable insights and optimize performance. </p>
+												Nam tristique lobortis nibh leo lacus diam lectus gravida purus </p>
 
 										</div>
 
@@ -2230,7 +2311,7 @@
 											</div>
 
 											<p class="elementor-icon-box-description">
-												Analyze data to uncover actionable insights and optimize performance. </p>
+												Nam tristique lobortis nibh leo lacus diam lectus gravida purus </p>
 
 										</div>
 
@@ -2305,7 +2386,7 @@
 						<a href="./" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
 							<img src="./logo_icon.png" alt="Infibytes Systems Logo" style="height: 48px; width: auto; object-fit: contain;">
 							<div style="display: flex; flex-direction: column; justify-content: center; text-transform: uppercase;">
-								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: #ffffff; letter-spacing: 2px; line-height: 1;">INFIBYTES</span>
+								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: #ffffff; letter-spacing: 2px; line-height: 1;">INFIBYTE</span>
 								<span style="font-family: 'Outfit', 'Inter Tight', 'Montserrat', sans-serif; font-weight: 600; font-size: 10px; color: #abb8c3; letter-spacing: 3px; line-height: 1.2;">SYSTEMS</span>
 							</div>
 						</a>
@@ -2505,7 +2586,7 @@
 						<div class="elementor-element elementor-element-71ab957 elementor-widget elementor-widget-heading"
 							data-id="71ab957" data-element_type="widget" data-e-type="widget"
 							data-widget_type="heading.default">
-							<div class="elementor-heading-title elementor-size-default">© 2026 Infibytes Systems. All rights reserved.
+							<div class="elementor-heading-title elementor-size-default">@ 2026 Infibytes Systems, All
 								Rights Reserved.</div>
 						</div>
 					</div>
